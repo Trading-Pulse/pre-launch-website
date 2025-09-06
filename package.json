@@ -1,0 +1,13 @@
+{
+  "name": "trading-pulse-landing",
+  "version": "1.0.0",
+  "description": "Trading Pulse landing page with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

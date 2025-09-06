@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styles */
+@layer components {
+  .btn-primary {
+    @apply bg-pulse-green hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-300 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-pulse-dark hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300;
+  }
+  
+  .gradient-hero {
+    background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 64, 175, 0.8)), url('../images/buy_sell.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .gradient-closing {
+    @apply bg-gradient-to-br from-pulse-dark to-pulse-blue;
+  }
+  
+  .step-circle {
+    @apply w-20 h-20 bg-pulse-blue rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6;
+  }
+  
+  .benefit-card {
+    @apply bg-white p-8 rounded-lg shadow-md;
+  }
+  
+  .header-sticky {
+    @apply fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-20 backdrop-blur-sm py-4;
+  }
+  
+  .btn-header-cta {
+    @apply bg-pulse-green hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-md text-sm transition-colors duration-300;
+  }
+  
+  .form-container {
+    @apply md:sticky md:top-24;
+  }
+}
